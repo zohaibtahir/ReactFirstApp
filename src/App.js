@@ -10,11 +10,12 @@ import FunctionalCounter from './components/FunctionalCounter';
 import ConditionalComponent from './components/ConditionalComponent';
 import MapingList from './components/MapingList';
 import Form from './components/Form';
+import Todo from './components/Todo';
 
 function App() {
   return (
     <div className="App">
-      <Form></Form>
+      <Todo></Todo>
     </div>
   );
 }
