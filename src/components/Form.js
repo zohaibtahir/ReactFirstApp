@@ -18,12 +18,22 @@ class Form extends Component{
         })
     }
 
+    handleSubmit = (event)=>{
+        event.preventDefault();
+        console.log({
+            fname: this.state.firstname,
+            lname: this.state.lastname
+        }
+        )
+    }
+
     render(){
         return (
             <div>
-                <form action="">
+                <form onSubmit={this.handleSubmit}>
                     <input onChange={this.handleFirstName} type="text" value={this.state.firstname} placeholder="First Name"/>
                     <input onChange={this.handleLastName} type="text" value={this.state.lastname} placeholder="Last Name"/>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         )
